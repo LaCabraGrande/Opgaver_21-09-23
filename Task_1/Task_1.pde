@@ -1,16 +1,11 @@
-// Task 1. Palindrome
-void setup () {
- printIfPalindrome("Den laks skal ned");
+// Task 1
+
+int[] arr = {28,230,9,310,72};
+
+void setup() {
+  println("Et tilfældig tal fra arrayet : "+getRandom(arr)); // kunne også have smidt det returnede element over i et int-variabel 'int ran = getRandom(arr);'
 }
 
-void printIfPalindrome(String t) {
-  t = t.toLowerCase();
-  String help = "";
-  for(int i = t.length(); i>0;i--) {
-    help = help+t.charAt(i-1);
-  }
-  if(t.equals(help)) {
-    println("Teksten '"+t+"' er et Palindrome");
-  } 
-  
-}
+int getRandom(int[] arr) {
+  return arr[(int)random(0,arr.length)];
+}  
