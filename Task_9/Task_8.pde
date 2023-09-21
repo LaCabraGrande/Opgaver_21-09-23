@@ -1,4 +1,4 @@
-// Task 9
+// Task 8
 int arr[] ={3,60,35,2,45,320,5,450,1,7};
 int[] sorteret = new int[arr.length];
 
